@@ -1,7 +1,12 @@
 DOCKER_IMAGE_NIKOLA:=dragas/nikola:alpine
 
-run_local:
+serve:
 	python3 -m http.server
+
+deploy:
+	ssh computingteachers.uk \
+		'cd computingteachers.uk && git pull'
+
 
 run:
 	#docker pull ${DOCKER_IMAGE_NIKOLA}
@@ -18,3 +23,4 @@ build:
 
 demo:
 	#
+
