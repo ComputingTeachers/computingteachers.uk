@@ -8,7 +8,7 @@ Hi All,
 
 * I want to gather Computing Teachers in Kent for an informal gathering and networking event
 * Monday 23rd October 2023 - Half Term - 10:00 to 13:00
-* I've booked a room on CCCU campus [Lg14](https://www.canterbury.ac.uk/campusmaps/2ea30af3d92c45ee851a1e01/details/39667fd284324e47844bbe6e)
+* I've booked a room on CCCU campus [canterbury.ac.uk Lg14](https://www.canterbury.ac.uk/campusmaps/2ea30af3d92c45ee851a1e01/details/39667fd284324e47844bbe6e) [OpenStreetMap](https://www.openstreetmap.org/?mlat=51.2795&mlon=1.0885#map=15/51.2795/1.0885) [what3words.com/tour.sleep.showed](https://what3words.com/tour.sleep.showed)
 
 * I intend this to feel like an un-conference, where people can talk/present ideas for 10min with a low bar (no powerpoint nonsense)
     * Examples:
