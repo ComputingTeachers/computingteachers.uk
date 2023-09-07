@@ -1,0 +1,43 @@
+<!DOCTYPE html><html>
+<head>
+    <meta charset="utf-8" />
+    <link id="favicon" rel="shortcut icon" type="image/png" href="data:image/png;base64,....==" />
+    <title>Subject Knowledge Audit</title>
+    <!-- <link rel="stylesheet" href="_base.css"> -->
+    <style>
+    </style>
+    <script src="https://unpkg.com/showdown/dist/showdown.min.js"></script>
+</head>
+<body>
+    <div id="markdown"></div>
+<script type="module">
+
+// Consts ----------------------------------------------------------------------
+
+const $markdownElement = document.getElementById('markdown') || document.getElementsByTagName('body').item(0);
+
+
+
+// Markdown --------------------------------------------------------------------
+
+function renderMarkdownFileToElement(url, $el) {
+    fetch(url)
+        .then(response => response.text())
+        .then((markdown_data) => {
+            const converter = new showdown.Converter();  // https://github.com/showdownjs/showdown
+            $el.innerHTML = converter.makeHtml(markdown_data);
+        })
+    .catch(err => console.error(err));
+}
+
+
+// Main ------------------------------------------------------------------------
+
+window.onhashchange = function() {
+    renderMarkdownFileToElement(`${window.location.hash.replace('#','')}`, $markdownElement);
+}
+
+window.onhashchange()
+</script>
+</body>
+</html>
