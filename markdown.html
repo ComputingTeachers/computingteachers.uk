@@ -17,7 +17,12 @@
 				fetch(sourceUrl)
 					.then(response => response.text())
 					.then((markdown_data) => {
-						const converter = new showdown.Converter()
+						const converter = new showdown.Converter({
+							tables: true,
+							tasklists: true,
+							openLinksInNewWindow: true,
+							// https://github.com/showdownjs/showdown#valid-options
+						},)
 						$el.innerHTML = converter.makeHtml(markdown_data)
 					})
 				.catch(err => console.error(err))

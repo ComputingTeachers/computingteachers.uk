@@ -37,8 +37,11 @@ Kent Computing Teachers Gathering/UnConference 2023
 
 .column[
 left
+
+
 ]
 .column[
+
 
 | Time | Duration | Activity |
 |------|----------|----------|
@@ -53,6 +56,7 @@ left
 |12:30|15min|Talk Slot 5|
 |12:45|15min|Closing Thoughts and Next Year?|
 |13:00||End|
+
 
 ]
 
