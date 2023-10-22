@@ -1,0 +1,5 @@
+/* https://github.com/gnab/remark/issues/236#issuecomment-108211948 */
+.column:first-of-type {float:left}
+.column:last-of-type {float:right}
+.split-40 .column:first-of-type {width: 40%}
+.split-40 .column:last-of-type {width: 60%}

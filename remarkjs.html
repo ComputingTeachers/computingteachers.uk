@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+	<!-- Bootstrap Standalone Markdown Presentation Renderer -->
+	<!-- Example Inspired by https://remarkjs.com/#8 -->
+	<head>
+		<meta charset="utf-8" />
+		<link id="favicon" rel="shortcut icon" type="image/png" href="data:image/png;base64,....==" />
+		<script src="http://remarkjs.com/downloads/remark-latest.min.js"></script>
+		<link rel="stylesheet" media="all" href="remarkjs.css" />
+	</head>
+	<body>
+		<script type="module">
+			if (!window.location.search) {window.location.search="source=README.md"}
+			const sourceUrl = (new URLSearchParams(window.location.search)).get("source")
+			var slideshow = remark.create({
+				sourceUrl,
+			})
+		</script>
+	</body>
+</html>

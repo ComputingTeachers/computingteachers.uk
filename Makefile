@@ -8,7 +8,7 @@ deploy:
 		'cd computingteachers.uk && git pull'
 
 
-run:
+nikola:
 	#docker pull ${DOCKER_IMAGE_NIKOLA}
 	docker run \
 		--rm \
@@ -18,9 +18,11 @@ run:
 		${DOCKER_IMAGE_NIKOLA} \
 		/bin/sh
 
-build:
+nikola_build:
 	#
 
-demo:
+nikola_demo:
 	#
 
+remark-latest.min.js:
+	curl -O http://remarkjs.com/downloads/remark-latest.min.js
