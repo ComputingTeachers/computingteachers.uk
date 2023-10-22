@@ -28,19 +28,10 @@ See you soon
 
 ---
 
-class: split-40
-<!-- https://github.com/gnab/remark/issues/236#issuecomment-108211948 -->
-
 
 Kent Computing Teachers Gathering/UnConference 2023
 ===================================================
 
-.column[
-left
-
-
-]
-.column[
 
 
 | Time | Duration | Activity |
@@ -58,9 +49,11 @@ left
 |13:00||End|
 
 
-]
 
 ---
+
+class: split-60
+<!-- https://github.com/gnab/remark/issues/236#issuecomment-108211948 -->
 
 .column[
 
@@ -75,8 +68,10 @@ Next Year?
     * None? Discord? Email-List?
 * [] Optional video recording of talks? (Equipment)
 
+
 ]
 .column[
+
 
 Other Concepts?
 ---------------

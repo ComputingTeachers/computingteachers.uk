@@ -1,5 +1,35 @@
+html {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+table {
+    border-spacing: 0;
+    border-collapse: collapse;
+    border:solid #000 !important;
+    border-width:1px 0 0 1px !important;
+    empty-cells: show;
+    /* todo - draw empty cells? */
+}
+
+table td, th {
+    /* border: 1px solid black; */
+    border:solid #000 !important;
+    border-width:0 1px 1px 0 !important;
+    vertical-align: top;
+}
+
+
+.remark-slide-content h1 { font-size: 1.5em; }
+.remark-slide-content h2 { font-size: 1.2em; }
+.remark-slide-content h3 { font-size: 1.0em; }
+
+
 /* https://github.com/gnab/remark/issues/236#issuecomment-108211948 */
 .column:first-of-type {float:left}
 .column:last-of-type {float:right}
 .split-40 .column:first-of-type {width: 40%}
-.split-40 .column:last-of-type {width: 60%}
+.split-40 .column:last-of-type  {width: 60%}
+.split-50 .column:first-of-type {width: 50%}
+.split-50 .column:last-of-type  {width: 50%}
+.split-60 .column:first-of-type {width: 60%}
+.split-60 .column:last-of-type  {width: 40%}
