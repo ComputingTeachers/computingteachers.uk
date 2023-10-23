@@ -2,7 +2,7 @@ Kent Computing Teachers Gathering/UnConference 2023
 ===================================================
 
 * [iCal](./kent-computing-teachers-unconference-2023.ics)
-
+* [Google Sheet - Talk Grid](https://docs.google.com/spreadsheets/d/1E4yDP3Vlxf2qAox-kCxR4TpBteeNC0cJPL6oGfldPns/edit?usp=sharing)
 
 Hi All,
 
