@@ -25,4 +25,4 @@ nikola_demo:
 	#
 
 remark-latest.min.js:
-	curl -O http://remarkjs.com/downloads/remark-latest.min.js
+	curl -L -O http://remarkjs.com/downloads/remark-latest.min.js
