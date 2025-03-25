@@ -9,7 +9,7 @@ Kent Computing Teachers Gathering/UnConference 2025
 Hi All,
 
 * We want to gather Computing Teachers in Kent for an informal gathering and networking event
-* Monday 26rd May 2025 - Half Term - 10:00 to 14:00
+* Tuesday 27th May 2025 - Half Term - 10:00 to 14:00
 * EKC Dover College has generously donated space for the event  [OpenStreetMap](https://www.openstreetmap.org/search?query=#map=19/51.128215/1.312295) [what3words.com/script.riots.token](https://what3words.com/script.riots.token)
 
 * This is an un-conference, where people can talk/present ideas for 10min with a low bar (no powerpoint nonsense)
