@@ -3,9 +3,9 @@ VERSION:2.0
 PRODID:-//none//NONSGML none//EN
 BEGIN:VEVENT
 UID:version1-10/23/2023@computingteachers.uk
-DTSTAMP:20250526T100000Z
-ORGANIZER;CN=Kent Computing Teachers Gathering/UnConference 2025:MAILTO:allan@calaldees.uk
-DTSTART:20250526T100000Z
+DTSTAMP:20250526T110000Z
+ORGANIZER;CN=Kent Computing Teachers Gathering/UnConference 2025:MAILTO:events@computingteachers.uk
+DTSTART:20250526T110000Z
 DTEND:20250526T140000Z
 SUMMARY:Kent Computing Teachers Gathering/UnConference 2025
 GEO:51.1281395,1.3122923

@@ -25,7 +25,7 @@ Hi All,
 
 See you soon
 
-<allan@calaldees.uk>
+<events@computingteachers.uk>
 
 
 ---
