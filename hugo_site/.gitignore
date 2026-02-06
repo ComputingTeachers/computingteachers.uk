@@ -1,0 +1,12 @@
+site/
+
+# npm genereated files
+node_modules/
+package-lock.json
+
+# Hugo generated files
+public/
+resources/
+hugo_stats.json
+.hugo_build.lock
+go.sum
