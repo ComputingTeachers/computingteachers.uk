@@ -18,5 +18,6 @@ config/
 content/
 data/
 i18n/
+static/
 go.mod
 hugo.toml*

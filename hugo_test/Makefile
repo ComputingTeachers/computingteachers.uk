@@ -1,4 +1,4 @@
-DOCKER_IMAGE='computingteachers'
+DOCKER_IMAGE='hugotest'
 
 site: clean
 	docker build --tag ${DOCKER_IMAGE} --target site .
@@ -13,9 +13,9 @@ serve_nginx:
 	docker build --tag ${DOCKER_IMAGE}nginx .
 	docker run --rm --publish 80:80 ${DOCKER_IMAGE}nginx
 
-.PHONEY: hugo
-hugo: hugo.toml node_modules
-	hugo serve --baseUrl /
+.PHONEY: hugo_serve
+hugo_serve: hugo.toml node_modules
+	hugo serve --baseURL /
 hugo.toml: themes/hugoplate
 	cp -R themes/hugoplate/exampleSite/* .
 node_modules: package.json
@@ -42,6 +42,7 @@ clean:
 		i18n \
 		package.json \
 		package-lock.json \
+		static \
 
 clean_all: clean
 	rm -rf \
