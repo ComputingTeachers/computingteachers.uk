@@ -4,6 +4,12 @@ FROM hugomods/hugo:latest AS site
     RUN cp themes/hugoplate/package.json . && npm install
     RUN cp -R themes/hugoplate/exampleSite/* .
     RUN hugo build --minify --baseURL /
+    # Race hazard - https://www.brycewray.com/posts/2023/06/hugo-tailwind-peace-at-last-maybe/
+    #   tailwind requires watching `hugo_stats.json` to know when to build
+    #   hugo exits before tailwind can see the change
+    # My solution - run the thing twice
+    #RUN hugo build --minify --baseURL /
+    # ?? This site is big enough that this error does not trigger
 
 FROM nginx:alpine AS nginx
     WORKDIR /usr/share/nginx/html

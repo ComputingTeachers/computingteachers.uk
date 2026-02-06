@@ -1,20 +1,28 @@
 DOCKER_IMAGE='hugotest'
 
-site: clean
+build_docker: clean
 	docker build --tag ${DOCKER_IMAGE} --target site .
 
-	docker create --name=${DOCKER_IMAGE} ${DOCKER_IMAGE}
-	docker cp ${DOCKER_IMAGE}:/site/public/         site/
-	docker cp ${DOCKER_IMAGE}:/site/resources/_gen/ site/
-	docker rm ${DOCKER_IMAGE}
+	docker create --name=${DOCKER_IMAGE}_container ${DOCKER_IMAGE}
+	docker cp ${DOCKER_IMAGE}_container:/site/public/         site/
+	docker cp ${DOCKER_IMAGE}_container:/site/resources/_gen/ site/
+	docker rm ${DOCKER_IMAGE}_container
 
-.PHONEY: serve_nginx
-serve_nginx:
+build_local: clean hugo.toml node_modules
+	hugo build --minify --baseURL /
+	hugo build --minify --baseURL /
+	mkdir -p site
+	cp -r public/ site/
+	cp -r resources/_gen/ site/
+
+serve_docker_nginx:
 	docker build --tag ${DOCKER_IMAGE}nginx .
 	docker run --rm --publish 80:80 ${DOCKER_IMAGE}nginx
 
-.PHONEY: hugo_serve
-hugo_serve: hugo.toml node_modules
+serve_local: site
+	python3 -m http.server --directory site
+
+serve_hugo: hugo.toml node_modules
 	hugo serve --baseURL /
 hugo.toml: themes/hugoplate
 	cp -R themes/hugoplate/exampleSite/* .

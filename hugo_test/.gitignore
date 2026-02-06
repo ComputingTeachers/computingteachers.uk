@@ -1,18 +1,18 @@
 site/
 
+# npm genereated files
 node_modules/
-package.json
 package-lock.json
 
 # Hugo generated files
 public/
 resources/
-themes/
 hugo_stats.json
 .hugo_build.lock
 go.sum
 
 # HugoPlat exampleSite
+themes/
 assets/
 config/
 content/
@@ -21,3 +21,4 @@ i18n/
 static/
 go.mod
 hugo.toml*
+package.json
