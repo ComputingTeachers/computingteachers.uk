@@ -1,0 +1,30 @@
+name: deploy_website
+
+on:
+  push:
+    branches:
+      - main
+    paths:
+      - ".github/workflows/deploy_website.yml"
+      - "hugo_site/**"
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: checkout
+        uses: actions/checkout@v6
+
+      - name: build
+        run: make --directory hugo_site build_docker
+
+      - name: rsync deployments
+        uses: burnett01/rsync-deployments@v8
+        with:
+          switches: -avzr --delete
+          path: hugo_site/site/
+          remote_path: ${{ secrets.REMOTE_PATH }} # ex: /var/www/html/
+          remote_host: ${{ secrets.REMOTE_HOST }} # ex: example.com
+          remote_port: ${{ secrets.REMOTE_PORT }} # ex: 22
+          remote_user: ${{ secrets.REMOTE_USER }} # ex: ubuntu
+          remote_key: ${{ secrets.REMOTE_PRIVATE_KEY }}
