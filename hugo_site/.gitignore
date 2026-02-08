@@ -10,3 +10,6 @@ resources/
 hugo_stats.json
 .hugo_build.lock
 go.sum
+
+# System
+.DS_Store

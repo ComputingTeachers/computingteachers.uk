@@ -231,13 +231,13 @@ flowchart TD
 
 ### Gallery
 
-{{< gallery dir="images/gallery" class="" height="400" width="400" webp="true" command="Fit" option="" zoomable="true" >}}
+{{< gallery dir="images" class="" height="400" width="400" webp="true" command="Fit" option="" zoomable="true" >}}
 
 <hr>
 
 ### Slider
 
-{{< slider dir="images/gallery" class="max-w-[600px] ml-0" height="400" width="400" webp="true" command="Fit" option="" zoomable="true" >}}
+{{< slider dir="images" class="max-w-[600px] ml-0" height="400" width="400" webp="true" command="Fit" option="" zoomable="true" >}}
 
 <hr>
 

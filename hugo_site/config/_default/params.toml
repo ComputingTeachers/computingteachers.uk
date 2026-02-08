@@ -1,9 +1,9 @@
 #################### default parameters ############################
 # favicon module: https://github.com/gethugothemes/hugo-modules/tree/master/images#favicon-implementation
-favicon = "images/computingteachers.logo.png"
+favicon = "images/logo.png"
 # logo module: https://github.com/gethugothemes/hugo-modules/tree/master/images#logo-implementation
-logo = "images/computingteachers.logo.png"
-logo_darkmode = "images/computingteachers.logo.darkmode.png"
+logo = "images/logo.png"
+logo_darkmode = "images/logo-darkmode.png"
 # use `px` or `x` with logo_width, example: "100px".
 # Note: logo_width is not work with .svg file
 logo_width = "48px"
@@ -35,9 +35,9 @@ copyright = "Content by respective authors. Hugo Template by [Zeon Studio](https
 enable = false
 preloader = "" # use jpg, png, svg or gif format.
 
-# Navigation button
+# Navigation button on navbar
 [navigation_button]
-enable = true
+enable = false
 label = "Github"
 link = "https://github.com/ComputingTeachers/computingteachers.uk"
 
@@ -74,10 +74,10 @@ keywords = [
     "University",
     "A-Level",
 ]
-description = "Resources"
-author = "Allan Callaghan and Contributors"
+description = "Ideas and resources for teaching computing"
+author = "ComputingTeachers.uk contributors"
 twitter = "calaldees"
-image = "images/og-image.png"
+image = "images/og-image.webp"
 
 
 # site verifications
