@@ -1,15 +1,12 @@
 #################### default parameters ############################
 # favicon module: https://github.com/gethugothemes/hugo-modules/tree/master/images#favicon-implementation
-#favicon = "images/computingteachers.logo.svg"
-favicon = "images/favicon.png"
+favicon = "images/computingteachers.logo.png"
 # logo module: https://github.com/gethugothemes/hugo-modules/tree/master/images#logo-implementation
-logo = "images/logo.png"
-logo_darkmode = "images/logo-darkmode.png"
-#logo = "images/computingteachers.logo.svg"
-#logo_darkmode = "images/computingteachers.logo.darkmode.svg"
+logo = "images/computingteachers.logo.png"
+logo_darkmode = "images/computingteachers.logo.darkmode.png"
 # use `px` or `x` with logo_width, example: "100px".
 # Note: logo_width is not work with .svg file
-logo_width = "160px"
+logo_width = "48px"
 logo_height = "32px"
 # if logo_webp set false, will not generate WEBP version of logo | default is true
 logo_webp = false
