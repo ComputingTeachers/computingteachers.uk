@@ -21,7 +21,7 @@ jobs:
       - name: rsync deployments
         uses: burnett01/rsync-deployments@v8
         with:
-          switches: -avzr --delete
+          switches: -avzr # --delete
           path: hugo_site/site/
           remote_path: ${{ secrets.REMOTE_PATH }} # ex: /var/www/html/
           remote_host: ${{ secrets.REMOTE_HOST }} # ex: example.com
