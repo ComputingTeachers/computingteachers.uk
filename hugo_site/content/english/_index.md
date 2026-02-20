@@ -1,15 +1,17 @@
 ---
-# Banner
+
 banner:
   title: "Ideas and Resources for Teaching Computing"
-  content: "ComputingTeachers.uk is consortium of skilled passionate teachers of computing that want to share their ideas and challenge the status quo. Use their experience and advice to take your computing teaching to the next level."
+  content: |
+    ComputingTeachers.uk is consortium of skilled passionate teachers of computing that want to share their ideas and challenge the status quo.
+
+    Use their experience and advice to take your computing teaching to the next level.
   image: "/images/banner.webp"
   button:
     enable: false
     label: "Fork Deploy and Edit Online 🚀"
     link: "https://app.sitepins.com/new/clone?name=Hugoplate&repository=https://github.com/zeon-studio/hugoplate/"
 
-# Features
 features:
   - title: "What's Available?"
     image: "/images/service-1.webp"
@@ -31,7 +33,7 @@ features:
       - "Say something to a wider audience than your immediate colleagues. The world is a big place. Someone outside of your normal sphere could benefit from your experience."
     button:
       enable: true
-      label: "Open a Pull Request"
-      link: "https://github.com/ComputingTeachers/computingteachers.uk"
+      label: "Create an article: Open a GitHub Pull Request"
+      link: "https://github.com/ComputingTeachers/computingteachers.uk/tree/main/hugo_site/content/english/blog"
 
 ---
