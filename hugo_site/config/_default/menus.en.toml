@@ -23,11 +23,6 @@ url = "/authors"
 
 [[main]]
 weight = 4
-name = "Resources"
-url = "/resources"
-
-[[main]]
-weight = 5
 name = "Hugoplate Examples"
 
 # ---------
