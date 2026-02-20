@@ -27,6 +27,13 @@ serve_hugo: node_modules
 node_modules:
 	npm install
 
+assets/images/og-image.png:
+	"/Applications/Google Chrome.app/Contents/MacOS/Google Chrome" \
+		--headless --screenshot --window-size=1200,630 \
+		http://localhost:1313/
+	mv screenshot.png $@
+	optipng $@
+
 clean:
 	docker image rm --force ${DOCKER_IMAGE} ${DOCKER_IMAGE}nginx
 	rm -rf \

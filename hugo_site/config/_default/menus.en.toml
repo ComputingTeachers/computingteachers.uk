@@ -1,63 +1,72 @@
 ############# English navigation ##############
 
 # main menu
-[[main]]
-name = "Home"
-url = "/"
-weight = 1
+#[[main]]
+#name = "Home"
+#url = "/"
+#weight = 1
+
+#[[main]]
+#name = "Categories"
+#url = "/categories"
+#weight = 2
 
 [[main]]
-name = "About"
-url = "/about"
 weight = 2
-
-[[main]]
-name = "Elements"
-url = "/elements"
-weight = 3
-
-[[main]]
-weight = 4
-name = "Pages"
-
-[[main]]
-parent = "Pages"
-name = "Blog"
+name = "Articles"
 url = "/blog"
 
 [[main]]
-parent = "Pages"
+weight = 3
+name = "Contributors"
+url = "/authors"
+
+[[main]]
+weight = 4
+name = "Resources"
+url = "/resources"
+
+[[main]]
+weight = 5
+name = "Hugoplate Examples"
+
+# ---------
+
+[[main]]
+parent = "Hugoplate Examples"
+name = "About"
+url = "/about"
+
+[[main]]
+parent = "Hugoplate Examples"
+name = "Elements"
+url = "/elements"
+
+[[main]]
+parent = "Hugoplate Examples"
 name = "Contact"
 url = "/contact"
 
 [[main]]
-parent = "Pages"
-name = "Authors"
-url = "/authors"
-
-[[main]]
-parent = "Pages"
-name = "Categories"
-url = "/categories"
-
-[[main]]
-parent = "Pages"
+parent = "Hugoplate Examples"
 name = "404 Page"
 url = "/404"
 
 
-# footer menu
+# Footer menu ------------------------------------------------------------------
+
 [[footer]]
 name = "About"
 url = "/about"
 weight = 1
 
-[[footer]]
-name = "Elements"
-url = "/elements"
-weight = 2
 
-[[footer]]
-name = "Privacy Policy"
-url = "/privacy-policy"
-weight = 3
+#[[footer]]
+#name = "Elements"
+#url = "/elements"
+#weight = 2
+
+#[[footer]]
+#name = "Privacy Policy"
+#url = "/privacy-policy"
+#weight = 3
