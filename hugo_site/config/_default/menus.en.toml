@@ -23,6 +23,11 @@ url = "/authors"
 
 [[main]]
 weight = 4
+name = "Events"
+url = "/events"
+
+[[main]]
+weight = 5
 name = "Hugoplate Examples"
 
 # ---------

@@ -37,9 +37,9 @@ preloader = "" # use jpg, png, svg or gif format.
 
 # Navigation button on navbar
 [navigation_button]
-enable = false
-label = "Github"
-link = "https://github.com/ComputingTeachers/computingteachers.uk"
+enable = true
+label = "Discord"
+link = "https://discord.gg/nbJBEFNHZg"
 
 # search
 # search module: https://github.com/gethugothemes/hugo-modules/tree/master/search
