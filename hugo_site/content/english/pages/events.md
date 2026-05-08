@@ -13,6 +13,7 @@ draft: false
 ### Kent Computing Teachers Unconference 2025
 
 https://www.dovercollege.ac.uk/news/computing-unconference/
+https://web.archive.org/web/20251018102932/https://www.dovercollege.ac.uk/news/computing-unconference/
 3 June 2025
 
 ## Future Events
