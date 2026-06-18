@@ -1,2 +1,5 @@
 test/
 remark*.js
+
+staticSiteGenerator
+build
