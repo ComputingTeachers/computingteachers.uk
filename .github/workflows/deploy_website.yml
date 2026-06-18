@@ -18,7 +18,7 @@ jobs:
 
       - name: build
         #run: make --directory hugo_site build_docker
-        run: make build
+        run: make build_docker  # should create a `./build/` folder to deploy
 
       - name: rsync deployments
         uses: burnett01/rsync-deployments@v8

@@ -19,7 +19,7 @@ staticSiteGenerator:
 
 build_docker: staticSiteGenerator
 	docker build --tag ${DOCKER_IMAGE_BASE} --target base staticSiteGenerator
-	docker build --tag ${DOCKER_IMAGE_BUILD} --build-arg BASE=${DOCKER_IMAGE_BASE} .
+	docker build --tag ${DOCKER_IMAGE_BUILD} --build-arg BASE_IMAGE=${DOCKER_IMAGE_BASE} .
 
 	docker create --name=${DOCKER_IMAGE_BUILD}_container ${DOCKER_IMAGE_BUILD}
 	docker cp ${DOCKER_IMAGE_BUILD}_container:/site/build/ build/
